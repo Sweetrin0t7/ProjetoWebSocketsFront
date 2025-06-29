@@ -31,7 +31,6 @@ cd seu-repo
 ### 2. Instale e inicie o servidor WebSocket (backend)
 ```bash
 cd votacao-backend
-npm install
 node server.js
 ```
 

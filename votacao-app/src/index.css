@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h2 {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.ranking-item {
+  background: #f0f8ff;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 5px;
+}
+
+.votacao-item {
+  background: #fff7e6;
+  border: 1px solid #f0c36d;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.votacao-item button {
+  margin-top: 8px;
+  background-color: #ffa726;
+}
+
+.votacao-item button:hover {
+  background-color: #fb8c00;
+}
+
+.voto-bar {
+  height: 10px;
+  background-color: #ffd54f;
+  border-radius: 5px;
+  margin-top: 5px;
+}

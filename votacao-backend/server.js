@@ -49,7 +49,7 @@ wss.on("connection", (ws) => {
           p.servico === servicoAtivo ? { ...p, votos: 0 } : p
         );
         
-        const prestadoresFiltrados = prestadores.filter(p => p.servico === servicoAtivo);
+        const prestadoresFiltrados = prestadores.filter(p => p.servico === msg.servico);
         transmissao({ tipo: "prestadores_para_votar", dados: prestadoresFiltrados, nomeVotacao: nomeVotacaoAtiva });
         break;
 
@@ -95,10 +95,7 @@ wss.on("connection", (ws) => {
         break;
 
       case "pedir_historico":
-        ws.send(JSON.stringify({
-          tipo: "historico_votacoes",
-          dados: historicoVotacoes
-        }));
+        ws.send(JSON.stringify({tipo: "historico_votacoes",dados: historicoVotacoes}));
         break;
 
     }
